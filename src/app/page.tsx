@@ -31,11 +31,12 @@ export default function Home() {
       </header>
 
       {/* Mascot */}
-      {/* <img src="./harrietRabbit.png" alt="Rabbit Logo" className="w-40 h-60 mt-6" /> */}
+      <img src="./Bunny1.png" alt="Rabbit Logo" className="w-40 h-60 mt-6" />
 
       {/* Data */}
+      {/* <div className="flex items-center justify-center h-screen"> */}
       <div>
-        <p className="text-xl text-center">Total Habits Tracked: </p>
+        <p className="text-xl text-center">Hops towards your habit: </p>
         <p className="text-6xl text-pink-500 text-center">{count}</p>
         {/* <p className="text-6xl text-pink-500 text-center">000</p> */}
         {/* <p className="text-center">Data from Arduino goes here!</p> */}
