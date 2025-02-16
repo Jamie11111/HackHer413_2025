@@ -1,7 +1,7 @@
 import serial;
 import requests;
 
-arduino = serial.Serial("COM4", 9600)
+arduino = serial.Serial("COM3", 9600)
 
 while True:
     try:
@@ -13,4 +13,4 @@ while True:
             response = requests.post("http://localhost:3000/api/counter", json={"count": count})
             print("Response:", response.json())
     except Exception as err:
-        print("Error:", err)
+        print("Error:", err) 

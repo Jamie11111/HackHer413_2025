@@ -13,7 +13,7 @@ export default function Home() {
         const data = await res.json();
         setCount(data.count);
       } catch {
-        console.error("Button counts could not be fetched: ", error);
+        console.error("Button counts could not be fetched: ", Error);
       }
     };
 
@@ -38,7 +38,7 @@ export default function Home() {
         <p className="text-xl text-center">Total Habits Tracked: </p>
         <p className="text-6xl text-pink-500 text-center">{count}</p>
         {/* <p className="text-6xl text-pink-500 text-center">000</p> */}
-        <p className="text-center">Data from Arduino goes here!</p>
+        {/* <p className="text-center">Data from Arduino goes here!</p> */}
       </div>
     </main>
   );
